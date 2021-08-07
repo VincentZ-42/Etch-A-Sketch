@@ -1,4 +1,4 @@
-# Etch-A-Sketch: [PLAY](https://vincentz-42.github.io/Etch-A-Sketch/)
+# Etch-A-Sketch: [PLAY](https://vincentz-42.github.io/Etch-A-Sketch/){align="center"}
 
 <img align="right" width="500" alt="example" src="https://user-images.githubusercontent.com/49771001/128606432-c5adfde6-9701-4618-b4e5-fa08361fb105.png">
 
