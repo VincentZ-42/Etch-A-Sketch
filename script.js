@@ -12,7 +12,7 @@ const eraserBtn = document.getElementById('eraser');
 classicBtn.onclick = (e) => setMode(e.target.value);
 eraserBtn.onclick = (e) => setMode(e.target.value);
 // clearBtn uses Event listener instead
-sizeSlider.onclick = (e) => updateSizeValue(e.target.value);
+sizeSlider.oninput = (e) => updateSizeValue(e.target.value);
 sizeSlider.onchange = (e) => newGridSize(e.target.value);
 
 // For future reference, it is best practice to list functions first before using them
@@ -26,9 +26,15 @@ function setMode(mode) {
       grid.forEach(cell => cell.addEventListener("mouseover", (e) => {
           e.target.style.backgroundColor = ETCH_COLOR;
         }));
+        grid.forEach(cell => cell.addEventListener("touchmove", (e) => {
+          e.target.style.backgroundColor = ETCH_COLOR;
+        }));
       return;
     case 'eraser':
       grid.forEach(cell => cell.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = DEFAULT_COLOR;
+      }));
+      grid.forEach(cell => cell.addEventListener("touchmove", (e) => {
         e.target.style.backgroundColor = DEFAULT_COLOR;
       }));
       return;
