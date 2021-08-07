@@ -1,8 +1,6 @@
 :root {
   --grid-cols: 1;
   --grid-rows: 1;
-  width: 100%;
-  height: 100%;
 }
 
 *,
@@ -43,6 +41,7 @@ main {
 
 #grid-container > div {
   background-color: #d8d8d8;
+  touch-action: none;
 }
 
 /* .cell {
