@@ -37,11 +37,11 @@ main {
   grid-template-columns: repeat(var(--grid-cols), auto);
   max-height: 1000px;
   max-width: 1079px;
+  touch-action: none;
 }
 
 #grid-container > div {
   background-color: #d8d8d8;
-  touch-action: none;
 }
 
 /* .cell {
