@@ -1,8 +1,9 @@
 # Etch-A-Sketch: [PLAY](https://vincentz-42.github.io/Etch-A-Sketch/)
 
-<p align="left">
+<p float="left">
  <img width="600" alt="example" src="https://user-images.githubusercontent.com/49771001/128606432-c5adfde6-9701-4618-b4e5-fa08361fb105.png">
-## Instructions
+
+ ## Instructions
   * Move your mouse over the center gray portion of the red box to start etching a sketch
   * Grid Size:
     * Move the slider to desired grid size to clear and reset the grid
