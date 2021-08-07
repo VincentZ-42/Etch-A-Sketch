@@ -10,13 +10,19 @@
     * Clear = clear your entire sketch to start over
     * Classic = Allows you to start etching with your mouse
     * Eraser = Allows you to erase your etch with your mouse
+  * *Note: This is not mobile friendly*
 
 ## Objectives
   * Use HTML, CSS, and Javacsript to create a web-repsonive game resembling Etch-A-Sketch toy
   * Learn concepts as part of The Odin Project Foundations course in DOM Manipulation
 
 ## Thoughts
-
+ * There is no mouseover equilvent for touchscreen, so this web game only works with desktops 
+ * Future improvements: 
+  * Make display dynamic to device display
+  * Create option for different color
+  * Create option for darkening overlap
+  * Make mobile friendly
 
 ## References
 - [https://stackoverflow.com/questions/57550082/creating-a-16x16-grid-using-javascript](https://stackoverflow.com/questions/57550082/creating-a-16x16-grid-using-javascript)
