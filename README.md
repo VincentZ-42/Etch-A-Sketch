@@ -1,5 +1,7 @@
 # Etch-A-Sketch: [PLAY](https://vincentz-42.github.io/Etch-A-Sketch/)
 
+<img align="right" width="500" alt="example" src="https://user-images.githubusercontent.com/49771001/128606432-c5adfde6-9701-4618-b4e5-fa08361fb105.png">
+
 ## Instructions
   * Move your mouse over the center gray portion of the red box to start etching a sketch
   * Grid Size:
@@ -8,8 +10,6 @@
     * Clear = clear your entire sketch to start over
     * Classic = Allows you to start etching with your mouse
     * Eraser = Allows you to erase your etch with your mouse
-
-<img align="right" width="500" alt="example" src="https://user-images.githubusercontent.com/49771001/128606432-c5adfde6-9701-4618-b4e5-fa08361fb105.png">
 
 ## Objectives
   * Use HTML, CSS, and Javacsript to create a web-repsonive game resembling Etch-A-Sketch toy
