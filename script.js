@@ -1,55 +1,72 @@
-const container = document.getElementById("container");
+const DEFAULT_COLOR = '#d8d8d8';  // Light Gray - Regular unaffected grid cell
+const ETCH_COLOR = '#505050';     // Dary Gray - Etched grid cell color
+const MAX_WIDTH = 879;            // Max width of grid to keep consistent spacing
+
+const container = document.getElementById("grid-container");
+const sizeValue = document.getElementById('sizeValue');
+const sizeSlider = document.getElementById('sizeSlider');
 const clearBtn = document.getElementById("clear");
-const newGridBtn = document.getElementById('newgrid');
+const classicBtn = document.getElementById('classic');
+const eraserBtn = document.getElementById('eraser');
 
-// Creates grid to play Etch-A-Sketch
-const makeGrid = (rows, cols) => {
-  container.style.setProperty('--grid-rows', rows);
-  container.style.setProperty('--grid-cols', cols);
-  for (let i = 0; i < (rows * cols); i++) {
-    let cell = document.createElement("div");
-    // cell.innerText = i + 1;
-    cell.addEventListener("mouseover", (e) => {
-      e.target.style.backgroundColor = '#505050'; // Dark Gray
-    });
-    container.appendChild(cell).className = "cell";
+classicBtn.onclick = (e) => setMode(e.target.value);
+eraserBtn.onclick = (e) => setMode(e.target.value);
+// clearBtn uses Event listener instead
+sizeSlider.onclick = (e) => updateSizeValue(e.target.value);
+sizeSlider.onchange = (e) => newGridSize(e.target.value);
+
+// For future reference, it is best practice to list functions first before using them
+// However, keeping this organizing simples layout, providing ease of viewing code
+
+function setMode(mode) {
+  const grid = container.querySelectorAll('div');
+
+  switch (mode) {
+    case 'classic':
+      grid.forEach(cell => cell.addEventListener("mouseover", (e) => {
+          e.target.style.backgroundColor = ETCH_COLOR;
+        }));
+      return;
+    case 'eraser':
+      grid.forEach(cell => cell.addEventListener("mouseover", (e) => {
+        e.target.style.backgroundColor = DEFAULT_COLOR;
+      }));
+      return;
   }
-};
+}
 
-// When Clear button is pressed
-// Resets entire grid background to default background Color
 clearBtn.addEventListener('click', () => {
-  const grid = document.querySelectorAll("div");
-  grid.forEach(block => block.style.backgroundColor = 'transparent');
+  const grid = container.querySelectorAll("div");
+  grid.forEach(cell => cell.style.backgroundColor = DEFAULT_COLOR);
 })
 
+function updateSizeValue(value) {
+  sizeValue.innerHTML = `${value} x ${value}`;
+}
 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
 }
-// When New Grid Size Button is pressed
-// 
-newGridBtn.addEventListener('click', () => {
-  let size = parseInt(prompt('What Square Grid size would you like? Max = 100'));
 
-  while (!Number.isInteger(size) || size > 100 || size <= 0) {
-    size = parseInt(prompt('Please enter a valid Integer between 0 - 101'));
+const makeGrid = (size) => {
+  container.style.setProperty('--grid-rows', size);
+  container.style.setProperty('--grid-cols', size);
+  for (let i = 0; i < (size * size); i++) {
+    let cell = document.createElement("div");
+    cell.style.width = MAX_WIDTH / size + "px";
+    cell.style.height = MAX_WIDTH / size + "px";
+    container.appendChild(cell).className = "cell";
   }
+  setMode('classic');
+};
 
-  // Gets current width n height of grid and sets this into container style
-  let width = container.offsetWidth;
-  let height = container.offsetHeight;
-
-  // Removes all cells in grid
+function newGridSize(size) {
   removeAllChildNodes(container);
+  makeGrid(size);
+}
 
-  // Sets up new grid with input Number
-  makeGrid(size, size);
-  container.style.setProperty('max-width', width + "px");
-  container.style.setProperty('max-height', height + "px");
-})
-
-// 1249 1071
-makeGrid(16, 16);
+window.onload = () => {
+  makeGrid(16);
+}
