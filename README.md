@@ -1,3 +1,4 @@
 # Etch-A-Sketch
 
-![example](https://user-images.githubusercontent.com/49771001/128606393-4121bac9-dfd5-48ac-b17e-67c94fcad15a.png)
+![image](https://user-images.githubusercontent.com/49771001/128606432-c5adfde6-9701-4618-b4e5-fa08361fb105.png)
+
