@@ -7,10 +7,10 @@
   * Grid Size:
     * Move the slider to desired grid size to clear and reset the grid
   * Buttons:
-    * Clear = clear your entire sketch to start over
-    * Classic = Allows you to start etching with your mouse
-    * Eraser = Allows you to erase your etch with your mouse
-  * *Note: This is not mobile friendly*
+    * **Clear** = clear your entire sketch to start over
+    * **Classic** = Allows you to start etching with your mouse
+    * **Eraser** = Allows you to erase your etch with your mouse
+  * ***Note: This is not mobile friendly***
 
 ## Objectives
   * Use HTML, CSS, and Javacsript to create a web-repsonive game resembling Etch-A-Sketch toy
