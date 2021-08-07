@@ -1,4 +1,4 @@
-<h1 align="center"># Etch-A-Sketch: [PLAY](https://vincentz-42.github.io/Etch-A-Sketch/)</h1>
+<h1 align="center">Etch-A-Sketch: [PLAY](https://vincentz-42.github.io/Etch-A-Sketch/)</h1>
 <p>
 </p>
 
