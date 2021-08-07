@@ -20,7 +20,18 @@
 
 ## References
   * Project built to learn concepts as part of The Odin Project Foundations course in DOM Manipulation
-
+  * [https://stackoverflow.com/questions/57550082/creating-a-16x16-grid-using-javascript](https://stackoverflow.com/questions/57550082/creating-a-16x16-grid-using-javascript)
+  * [https://overapi.com/html](https://overapi.com/html)
+- [https://www.w3schools.com/jsref/dom_obj_event.asp](https://www.w3schools.com/jsref/dom_obj_event.asp)
+- [https://www.w3schools.com/howto/howto_css_center_button.asp](https://www.w3schools.com/howto/howto_css_center_button.asp)
+- [https://www.w3schools.com/cssref/css_colors.asp](https://www.w3schools.com/cssref/css_colors.asp)
+- [https://www.w3schools.com/cssref/css3_pr_justify-content.asp](https://www.w3schools.com/cssref/css3_pr_justify-content.asp)
+- [https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/](https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/)
+- [https://github.com/Artis-Dev/etch-a-sketch](https://github.com/Artis-Dev/etch-a-sketch)
+- [https://stackoverflow.com/questions/65890826/problem-with-resizing-of-a-grid-javascript-css-html-etch-a-sketch-for-the-odi](https://stackoverflow.com/questions/65890826/problem-with-resizing-of-a-grid-javascript-css-html-etch-a-sketch-for-the-odi)
+- [https://www.w3schools.com/jsref/event_oninput.asp](https://www.w3schools.com/jsref/event_oninput.asp)
+- [https://developer.mozilla.org/en-US/docs/Web/API/Document/touchmove_event](https://developer.mozilla.org/en-US/docs/Web/API/Document/touchmove_event)
 Try it out yourself: [Etch-A-Sketch](https://vincentz-42.github.io/Etch-A-Sketch/)
 
 
